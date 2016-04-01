@@ -1,4 +1,4 @@
-int is_int(char *str)
+int is_int(const char *str)
 {
   while (*str == '+' || *str == '-')
     str++;

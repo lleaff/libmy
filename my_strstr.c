@@ -1,6 +1,8 @@
-int my_strncmp(char *s1, char *s2, int n);
+#include <stdlib.h>
 
-char *my_strstr(char *str, char *to_find)
+int my_strncmp(const char *s1, const char *s2, int n);
+
+char *my_strstr(const char *str, const char *to_find)
 {
   int to_find_l;
 
@@ -13,9 +15,9 @@ char *my_strstr(char *str, char *to_find)
       if (*str == *to_find)
         {
           if (!my_strncmp(str, to_find, to_find_l))
-            return (str);
+            return ((char*)str);
         }
       str++;
     }
-  return ("null");
+  return (NULL);
 }

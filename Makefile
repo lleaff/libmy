@@ -55,6 +55,8 @@ all: $(OUT)
 $(OUT): $(OBJ)
 	$(AR) rcs $(OUT) $(OBJ)
 
+re: fclean all
+
 clean:
 	rm -f $(OBJ)
 

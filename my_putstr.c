@@ -1,15 +1,16 @@
 #include "lib.h"
 
-int my_putstr(char* str)
+int my_putstr(const char* str)
 {
-    while (*str)
-        my_putchar(*str++);
+  char *strp = (char*)str;
+    while (*strp)
+        my_putchar(*strp++);
     return (0);
 }
 
 char g_fill_char = ' ';
 
-int my_putstrn(char* str, int n)
+int my_putstrn(const char* str, int n)
 {
     int i;
     char c;
@@ -26,7 +27,7 @@ int my_putstrn(char* str, int n)
 }
 
 /* Right-aligned my_putstrn */
-int my_putstrnr(char* str, int n)
+int my_putstrnr(const char* str, int n)
 {
     int i;
     int len;

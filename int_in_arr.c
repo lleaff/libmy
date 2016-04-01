@@ -1,4 +1,4 @@
-int int_in_arr(int n, int *arr, int length)
+int int_in_arr(int n, const int *arr, int length)
 {
     int i;
 

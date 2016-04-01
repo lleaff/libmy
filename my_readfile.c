@@ -13,7 +13,7 @@
 
 #define BUFFERSIZE 3000
 
-char *my_readfile(char* filename)
+char *my_readfile(const char* filename)
 {
     int file;
     char buffer[BUFFERSIZE];

@@ -1,10 +1,12 @@
-void *noop(void *_)
+#include <stdarg.h>
+
+void *noop(const void *_, ...)
 {
-    return (_);
+    return ((void*)_);
 }
 
-void *noop2(void *_, void *__)
+void *noop2(const void *_, const void *__)
 {
   noop(_);
-  return (__);
+  return ((void*)__);
 }

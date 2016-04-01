@@ -3,7 +3,7 @@
 /**
  * Returns a heap-allocated string of the right size from another string.
  */
-char *my_strnew(char *buffer)
+char *my_strnew(const char *buffer)
 {
   int len;
   char *str;
@@ -16,7 +16,7 @@ char *my_strnew(char *buffer)
   return (str);
 }
 
-char *my_strnnew(char *buffer, int n)
+char *my_strnnew(const char *buffer, int n)
 {
   char *str;
 

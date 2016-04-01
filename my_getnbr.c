@@ -1,4 +1,4 @@
-int   my_getnbr(char *str)
+int   my_getnbr(const char *str)
 {
   int nbr;
   int sign;

@@ -1,4 +1,4 @@
-void my_strpush(char* dest, char* toPush)
+void my_strpush(char* dest, const char* toPush)
 {
     while (*dest)
         dest++;

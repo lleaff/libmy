@@ -1,6 +1,6 @@
 #include "lib.h"
 
-t_bool path_is_current(char *path)
+t_bool path_is_current(const char *path)
 {
   if (!my_strcmp(path, "."))
     return (true);
@@ -10,9 +10,7 @@ t_bool path_is_current(char *path)
     return (false);
 }
 
-#include <stdio.h> /* DEBUG */
-
-char *concat_paths(char *pre, char *post)
+char *concat_paths(const char *pre, const char *post)
 {
   int l_pre;
   int l_post;
@@ -21,8 +19,6 @@ char *concat_paths(char *pre, char *post)
 
   if (path_is_current(post))
     return (my_strnew(pre));
-   /* if (path_is_current(pre))
-    return (my_strnew(post)); */
   l_pre  = my_strlen(pre);
   l_post = my_strlen(post);
   trailing_slash = pre[l_pre - 1] == '/';
@@ -36,7 +32,7 @@ char *concat_paths(char *pre, char *post)
   return (res);
 }
 
-t_bool path_is_dot_ref(char *path)
+t_bool path_is_dot_ref(const char *path)
 {
     int i;
     int len;

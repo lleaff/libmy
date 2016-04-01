@@ -1,4 +1,4 @@
-int str_eq(char *str1, char *str2)
+int str_eq(const char *str1, const char *str2)
 {
   while (*str1)
     {

@@ -1,6 +1,6 @@
 #include "lib.h"
 
-char *my_strcatnew(char* pre, char* post)
+char *my_strcatnew(const char* pre, const char* post)
 {
   char *res;
   int  l_pre;
