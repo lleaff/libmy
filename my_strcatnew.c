@@ -5,7 +5,7 @@ char *my_strcatnew(char* pre, char* post)
   char *res;
   int  l_pre;
   int  l_post;
-  
+
   l_pre = my_strlen(pre);
   l_post = my_strlen(post);
   if ((res = malloc(l_pre + l_post + 1)) == NULL)

@@ -19,7 +19,7 @@ char *my_readfile(char* filename)
     char buffer[BUFFERSIZE];
     int size;
     char *content;
-    
+
     file = open (filename, O_RDONLY, OPEN_FLAGS);
     if (!file)
         return NULL;

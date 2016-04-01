@@ -43,16 +43,17 @@ OUT = ../libmy.a
 
 CFLAGS = -g -Werror -Wall -Wextra
 CC = gcc
+AR = ar
 
 
 
 all: $(OUT)
 
 .c.o:
-	$(CC) $(CCFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(OUT): $(OBJ)
-	ar rcs $(OUT) $(OBJ)
+	$(AR) rcs $(OUT) $(OBJ)
 
 clean:
 	rm -f $(OBJ)

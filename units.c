@@ -32,7 +32,7 @@ static char *_num_to_unit_suffixed(long n, char suffix)
   char *numstr;
   char *res;
   int len;
-  
+
   unitstr[0] = suffix;
   unitstr[1] = '\0';
   len = int_length(n);
