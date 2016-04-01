@@ -1,14 +1,10 @@
 SRC = \
-				bool.h \
 				char_in_str.c \
-				colors.h \
 				debug.c \
-				debug.h \
 				int_in_arr.c \
 				int_length.c \
 				is_int.c \
 				last_n_chars.c \
-				lib.h \
 				linkedlist1.c \
 				linkedlist2.c \
 				linkedlist3.c \
@@ -16,14 +12,10 @@ SRC = \
 				linkedlist.c \
 				linkedlist_debug.c \
 				linkedlist_free.c \
-				linkedlist.h \
 				linkedlist_iter.c \
-				macros.h \
-				Makefile \
 				my_getnbr.c \
 				my_itoa.c \
 				my_memcpy.c \
-				my_memcpy.h \
 				my_memset.c \
 				my_putchar.c \
 				my_put_nbr.c \
