@@ -7,7 +7,7 @@ int    int_length_base(long n, int base)
   long m;
 
   sign = n >= 0 ? 1 : -1;
-  for (l = 0, m = n; (sign >= 0 && m > 0) || m < 0; m /= 10)
+  for (l = 0, m = n; (sign >= 0 && m > 0) || m < 0; m /= base)
     l++;
   if (sign == -1)
     l++;

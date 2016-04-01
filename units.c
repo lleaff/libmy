@@ -63,7 +63,7 @@ char *size_to_human_readable(long size)
   if (size < SIZE_BS)
     return _num_to_unit_suffixed(size, MEM_SIZE_SUFFIXES[0]);
   exp = log(size) / log(SIZE_BS);
-  if (exp >= STRLEN(MEM_SIZE_SUFFIXES))
+  if (exp >= (long)STRLEN(MEM_SIZE_SUFFIXES))
     return (my_longlongtoa(size));
   res = size / pow(SIZE_BS, exp) * 10;
   unit = MEM_SIZE_SUFFIXES[exp];
