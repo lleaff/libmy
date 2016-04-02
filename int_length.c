@@ -1,6 +1,6 @@
 #include "lib.h"
 
-int    int_length_base(long n, int base)
+int    int_length_base(long long int n, int base)
 {
   int sign;
   int l;
@@ -15,7 +15,7 @@ int    int_length_base(long n, int base)
   return (l);
 }
 
-int    int_length(long n)
+int    int_length(long long int n)
 {
     return (int_length_base(n, 10));
 }

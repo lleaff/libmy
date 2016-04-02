@@ -1,6 +1,19 @@
 #ifndef MACROS_H
 #define MACROS_H
 
+#ifndef RETURN_IF_NULL
+#define RETURN_IF_NULL(x) \
+  if ((x) == NULL) \
+  { \
+    return (NULL); \
+  }
+#endif /* RETURN_IF_NULL */
+
+#ifndef MALLOC_MB
+#define MALLOC_MB(ptr, size) \
+  RETURN_IF_NULL(malloc(size));
+#endif /* MALLOC_MB */
+
 #ifndef MIN
 #define MIN(x, y) ((x) > (y) ? (y) : (x))
 #endif /* MIN */
