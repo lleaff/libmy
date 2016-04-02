@@ -11,7 +11,7 @@
 
 #ifndef MALLOC_MB
 #define MALLOC_MB(ptr, size) \
-  RETURN_IF_NULL(malloc(size));
+  RETURN_IF_NULL(ptr = malloc(size));
 #endif /* MALLOC_MB */
 
 #ifndef MIN

@@ -51,3 +51,23 @@ char *my_longlongtoa(long long n)
     str[l - 1] = (n % 10) * sign + '0';
   return (str);
 }
+
+
+char *my_longlongunsignedtoa(long long unsigned int n)
+{
+  long l;
+  long m;
+  char *str;
+
+  for (l = 0, m = n; m > 0; m /= 10)
+    l++;
+  l = MAX(1, l);
+  if ((str = malloc(sizeof(char) * (l + 1))) == NULL)
+    return (NULL);
+  str[l] = '\0';
+  if (n == 0)
+    str[0] = '0';
+  for (; n > 0; n /= 10, l--)
+    str[l - 1] = (n % 10) + '0';
+  return (str);
+}

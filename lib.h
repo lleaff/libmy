@@ -39,6 +39,12 @@ int    int_length_base(long long int n, int base);
 int    int_length(long long int n);
 char   *my_itoa(int n);
 char   *my_longlongtoa(long long n);
+char   *my_longlongunsignedtoa(long long unsigned int n);
+char   *my_itoa_base(long long int n, int base, const char *charset);
+char   *my_longlongtoa_base(long long int n, int base,
+    const char* charset);
+char   *my_longlongunsignedtoa_base(long long unsigned int n, int base,
+    const char *charset);
 int    my_getnbr(const char *str);
 int    is_int(const char *str);
 int    str_eq(const char* str1, const char* str2);

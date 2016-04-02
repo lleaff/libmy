@@ -19,6 +19,7 @@ SRC = \
 				my_calloc.c \
 				my_getnbr.c \
 				my_itoa.c \
+				my_itoa_base.c \
 				my_memcpy.c \
 				my_memset.c \
 				my_putchar.c \
