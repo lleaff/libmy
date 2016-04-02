@@ -43,6 +43,8 @@ void*  ll_foldr(t_ll *node, void*(f)(void* acc, t_ll* node), void *start);
 void   ll_foreach(t_ll *node, void (f)(void* data, t_ll* node, int i));
 t_ll*  ll_zip(t_ll *a, t_ll *b);
 
+char*  ll_concat_str(const t_ll *strings);
+
 void   ll_print_strings(t_ll* node, char *delim);
 #ifdef DEBUG
 void   ll_debug_strings(t_ll* node);

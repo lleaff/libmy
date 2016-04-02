@@ -16,6 +16,8 @@ SRC = \
 				linkedlist_debug.c \
 				linkedlist_free.c \
 				linkedlist_iter.c \
+				linkedlist_str_concat.c \
+				linkedlist_zip.c \
 				my_calloc.c \
 				my_getnbr.c \
 				my_itoa.c \
