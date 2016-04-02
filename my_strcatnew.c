@@ -1,5 +1,8 @@
 #include "lib.h"
 
+/*
+ * Concat two strings to a newly allocated one.
+ */
 char *my_strcatnew(const char* pre, const char* post)
 {
   char *res;
