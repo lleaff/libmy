@@ -1,10 +1,12 @@
+#include <unistd.h>
 #include "lib.h"
 
 int my_putstr(const char* str)
 {
-  char *strp = (char*)str;
-  while (*strp)
-    my_putchar(*strp++);
+  int len;
+
+  len = my_strlen(str);
+  write(STDOUT_FILENO, str, len);
   return (0);
 }
 
