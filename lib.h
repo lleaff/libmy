@@ -15,6 +15,7 @@ void   my_puterr(const char *msg);
 void   my_puterrn(const char *msg, int n);
 void   my_putcharerr(char c);
 int    fail(const char *msg);
+int    failn(const char *msg, int n);
 void   *fail_ptr(const char *msg);
 /* Memory */
 void   *my_memset(void *ptr, char byte, size_t n);
