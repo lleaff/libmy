@@ -45,6 +45,7 @@ void   my_strnpush(char* dest, const char* to_push, int n);
 char   *last_n_chars(char* str, int n);
 char   *my_strcpy(char* dest, const char* src);
 char   *my_strcpy_end(char *dest, const char *src);
+char   *append_char(char *str, char c);
 char   *my_strcatnew(const char* pre, const char* post);
 char   *my_strnew(const char *buffer);
 char   *my_strnnew(const char *buffer, int length);
