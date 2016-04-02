@@ -3,6 +3,7 @@ SRC = \
 				bool.c \
 				char_in_str.c \
 				debug.c \
+				fail.c \
 				int_in_arr.c \
 				int_length.c \
 				is_int.c \
@@ -23,6 +24,7 @@ SRC = \
 				my_putchar.c \
 				my_put_nbr.c \
 				my_put_nbr_base.c \
+				my_puterr.c \
 				my_putstr.c \
 				my_readfile.c \
 				my_readline.c \
