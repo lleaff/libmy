@@ -7,6 +7,7 @@
 #include "colors.h"
 #include "my_memcpy.h"
 #include "stringt.h"
+#include "assign_and_free.h"
 
 void   *noop(const void *, ...);
 void   *noop2(const void *, const void *);

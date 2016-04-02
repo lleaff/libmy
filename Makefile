@@ -1,5 +1,6 @@
 SRC = \
 				append_char.c \
+				assign_and_free.c \
 				bool.c \
 				char_in_str.c \
 				debug.c \
