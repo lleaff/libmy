@@ -6,6 +6,7 @@
 #include "bool.h"
 #include "colors.h"
 #include "my_memcpy.h"
+#include "stringt.h"
 
 void   *noop(const void *, ...);
 void   *noop2(const void *, const void *);
@@ -37,6 +38,8 @@ char   **my_str_to_wordtab(char *str);
 void   my_strpush(char* dest, const char* to_push);
 void   my_strnpush(char* dest, const char* to_push, int n);
 char   *last_n_chars(char* str, int n);
+char   *my_strcpy(char* dest, const char* src);
+char   *my_strcpy_end(char *dest, const char *src);
 char   *my_strcatnew(const char* pre, const char* post);
 char   *my_strnew(const char *buffer);
 char   *my_strnnew(const char *buffer, int length);

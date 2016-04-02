@@ -25,6 +25,7 @@ SRC = \
 				my_readnchars.c \
 				my_strcatnew.c \
 				my_strcmp.c \
+				my_strcpy.c \
 				my_strlen.c \
 				my_strncmp.c \
 				my_strnew.c \
@@ -35,6 +36,8 @@ SRC = \
 				noop.c \
 				paths.c \
 				str_eq.c \
+				stringt.c \
+				string_concat.c \
 				units.c
 
 OBJ = $(SRC:.c=.o)
