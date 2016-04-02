@@ -51,6 +51,7 @@ char   *size_to_human_readable(long size);
 t_bool path_is_current(const char *path);
 char   *concat_paths(const char *pre, const char *post);
 t_bool path_is_dot_ref(const char *path);
+void   *set_to(void *val, ...);
 
 #ifdef DEBUG
 #include "debug.h"

@@ -36,6 +36,7 @@ SRC = \
 				my_str_to_wordtab.c \
 				noop.c \
 				paths.c \
+				set_to.c \
 				str_eq.c \
 				stringt.c \
 				string_concat.c \
