@@ -11,6 +11,7 @@
 void   *noop(const void *, ...);
 void   *noop2(const void *, const void *);
 void   *my_memset(void *ptr, char byte, size_t n);
+void   *my_calloc(size_t n);
 int    int_in_arr(int n, const int *arr, int length);
 void   my_putchar(char c);
 int    my_putstr(const char* str);
@@ -35,7 +36,8 @@ int    is_int(const char *str);
 int    str_eq(const char* str1, const char* str2);
 int    my_strcmp(const char *s1, const char *s2);
 int    my_strncmp(const char *s1, const char *s2, int n);
-int    char_in_str(char c, char *str);
+int    char_in_str(char c, const char *str);
+t_bool str_has(const char *str, char c);
 char   *my_strstr(const char *str, const char *to_find);
 char   **my_str_to_wordtab(char *str);
 void   my_strpush(char* dest, const char* to_push);
