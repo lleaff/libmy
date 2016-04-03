@@ -1,9 +1,9 @@
 #ifndef LIB_H
 #define LIB_H
 
+#include "types.h"
 #include "macros.h"
 #include "linkedlist.h"
-#include "bool.h"
 #include "colors.h"
 #include "my_memcpy.h"
 #include "stringt.h"
@@ -28,24 +28,22 @@ extern char g_fill_char;
 int    my_putstrn(const char* str, int n);
 int    my_putstrnr(const char* str, int n);
 int    my_strlen(const char *str);
-void   my_put_nbr_base(long long int n, int base, const char *charset);
-void   my_put_binary(long long int n);
-void   my_put_hex(long long int n);
+void   my_put_nbr_base(t_llint n, int base, const char *charset);
+void   my_put_binary(t_llint n);
+void   my_put_hex(t_llint n);
 void   my_put_nbr(int n);
 void   my_put_longlong(long long n);
 char   *my_readfile(const char* filename);
 char   *my_readline();
 char   *my_readnchars(int n);
-int    int_length_base(long long int n, int base);
-int    int_length(long long int n);
+int    int_length_base(t_llint n, int base);
+int    int_length(t_llint n);
 char   *my_itoa(int n);
 char   *my_longlongtoa(long long n);
-char   *my_longlongunsignedtoa(long long unsigned int n);
-char   *my_itoa_base(long long int n, int base, const char *charset);
-char   *my_longlongtoa_base(long long int n, int base,
-    const char* charset);
-char   *my_longlongunsignedtoa_base(long long unsigned int n, int base,
-    const char *charset);
+char   *my_longlongunsignedtoa(t_lluint n);
+char   *my_itoa_base(t_llint n, int base, const char *charset);
+char   *my_longlongtoa_base(t_llint n, int base, const char* charset);
+char   *my_longlongunsignedtoa_base(t_lluint n, int base, const char *charset);
 int    my_getnbr(const char *str);
 int    is_int(const char *str);
 int    str_eq(const char* str1, const char* str2);
