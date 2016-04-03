@@ -25,7 +25,7 @@ int my_putstrn(const char* str, int n)
     c = !end ? str[i] : g_fill_char;
     my_putchar(c);
   }
-  return(0);
+  return (0);
 }
 
 /* Right-aligned my_putstrn */
@@ -46,5 +46,5 @@ int my_putstrnr(const char* str, int n)
       c = str[i - offset];
     my_putchar(c);
   }
-  return(0);
+  return (0);
 }
