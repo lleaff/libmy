@@ -2,6 +2,7 @@
 
 #define ITOA_BUFFER_SIZE 300 
 
+#include <stdio.h>/* DEBUG */
 void _my_longlongtoa_base(long long int n, int base,
     const char *charset, char *str)
 {
@@ -9,9 +10,9 @@ void _my_longlongtoa_base(long long int n, int base,
 
   num = n % base;
   n = n / base;
-  if (n > 0)
+  if (n != 0)
     _my_longlongtoa_base(n, base, charset, str);
-  append_char(str, charset[num]);
+  append_char(str, charset[ABS(num)]);
 }
 
 char  *my_longlongtoa_base(long long int n, int base,

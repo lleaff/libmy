@@ -22,6 +22,10 @@
 #define MAX(x, y) ((x) > (y) ? (x) : (y))
 #endif /* MAX */
 
+#ifndef ABS
+#define ABS(x) ((x) >= 0 ? (x) : -(x))
+#endif /* MAX */
+
 #ifndef STRLEN
 #define STRLEN(s) (sizeof(s) - 1)
 #endif /* STRLEN */
