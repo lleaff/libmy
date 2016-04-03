@@ -33,7 +33,7 @@ SRC = \
 				my_readfile.c \
 				my_readline.c \
 				my_readnchars.c \
-				my_strcatnew.c \
+				my_strcat.c \
 				my_strcmp.c \
 				my_strcpy.c \
 				my_strlen.c \

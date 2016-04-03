@@ -1,6 +1,22 @@
 #include "lib.h"
 
 /*
+ * Append a string to another and return the number of appended
+ *  characters.
+ */
+int my_strcat(char* dest, const char* toAppend)
+{
+  int i;
+
+  while (*dest)
+    dest++;
+  for (i = 0; toAppend[i]; i++)
+    *dest++ = toAppend[i];
+  *dest = '\0';
+  return (i);
+}
+
+/*
  * Concat two strings to a newly allocated one.
  */
 char *my_strcatnew(const char* pre, const char* post)
