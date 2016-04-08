@@ -55,16 +55,14 @@ OBJ = $(SRC:.c=.o)
 
 OUT = ../libmy.a
 
-CFLAGS = -g -Werror -Wall -Wextra
+CFLAGS = -Werror -Wall -Wextra
 CC = gcc
 AR = ar
-
-
 
 all: $(OUT)
 
 .c.o:
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) -fPIC $(CFLAGS) -c $< -o $@
 
 $(OUT): $(OBJ)
 	$(AR) rcs $(OUT) $(OBJ)
