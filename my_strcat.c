@@ -1,10 +1,27 @@
 #include "lib.h"
 
 /*
+ * Append a string to another and return the destination card.
+ */
+char *my_strcat(char* dest, const char* toAppend)
+{
+  int i;
+  char *start;
+
+  start = dest;
+  while (*dest)
+    dest++;
+  for (i = 0; toAppend[i]; i++)
+    *dest++ = toAppend[i];
+  *dest = '\0';
+  return (start);
+}
+
+/*
  * Append a string to another and return the number of appended
  *  characters.
  */
-int my_strcat(char* dest, const char* toAppend)
+int my_strcatl(char* dest, const char* toAppend)
 {
   int i;
 
