@@ -5,7 +5,7 @@
 
 #define COLOR_RESET "\x1B[0m"
 
-#define FG_BLACK    "\x2B[30m"
+#define FG_BLACK    "\x1B[30m"
 #define FG_RED      "\x1B[31m"
 #define FG_GREEN    "\x1B[32m"
 #define FG_YELLOW   "\x1B[33m"
