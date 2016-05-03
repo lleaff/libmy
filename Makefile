@@ -3,6 +3,7 @@ SRC = \
 				assign_and_free.c \
 				bool.c \
 				char_in_str.c \
+				colors.c \
 				debug.c \
 				fail.c \
 				int_in_arr.c \

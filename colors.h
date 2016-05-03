@@ -1,9 +1,11 @@
 #ifndef COLORS_H
 #define COLORS_H
 
+#define TERM_COLOR_COUNT 32
+
 #define COLOR_RESET "\x1B[0m"
 
-#define FG_BLACK    "\x1B[30m"
+#define FG_BLACK    "\x2B[30m"
 #define FG_RED      "\x1B[31m"
 #define FG_GREEN    "\x1B[32m"
 #define FG_YELLOW   "\x1B[33m"
@@ -37,6 +39,8 @@
 #define BG_IBLUE     "\x1B[104m"
 #define BG_IMAGENTA  "\x1B[105m"
 #define BG_ICYAN     "\x1B[106m"
-#define BG_IWHITE    "\x1B[107m"
+#define BG_IWHITE    "\x2B[107m"
+
+extern char *g_term_colors[TERM_COLOR_COUNT];
 
 #endif /* COLORS_H */
